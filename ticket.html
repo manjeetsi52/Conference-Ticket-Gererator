@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Page</title>
+    <link rel="stylesheet" href="background.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <img
+          src="images/pattern-circle.svg"
+          alt="image"
+          class="pattern-circle-image"
+        />
+        <img class="images/pattern-lines-image" />
+        <img
+          src="images/pattern-circle.svg"
+          alt="image"
+          class="pattern-circle-image2"
+        />
+        <img alt="image" class="pattern-squiggly-line-top" />
+        <img
+          class="pattern-squiggly-line-bottom-desktop"
+          src="images/pattern-squiggly-line-bottom-desktop.svg"
+        />
+        <img
+          src="images/background-desktop.png"
+          alt="image"
+          class="background-desktop-image"
+        />
+      </div>
+      
+      <div class="form">
+        <section id="logo">
+          <img src="images/logo-full.svg" alt="logo" />
+        </section>
+        <h1 id="heading">
+          Congrats,
+          <p id="username_ticket"></p>
+          <br />
+          Your ticket is ready.
+        </h1>
+        <h3 id="sub-heading">
+          We've emailed your ticket to <br />
+          <p id="useremail_ticket"></p>
+          and will send updates in <br />the run up to the event.
+        </h3>
+      </div>
+
+      <div class="ticket">
+
+        <section id="logo_date">
+          <img src="images/logo-full.svg" alt="logo" />
+          <p id="date_ticket"> / Austin, Tx</p>
+        </section>
+
+        <section id="user_image_box">
+         <img src="images/image-avatar.jpg" alt="userimage"  id="user_image1"/>
+
+          <section id="name">
+            <p id="user_info_ticket"> </p>
+             <section id="git_name_image"> <img src="images/icon-github.svg" alt="image" id="github_image" />
+              <p id="github-username"></p></section>
+            </section>
+          </section>
+
+        </section>
+
+        <section id="ticket_id"><p id="ticketno"></p></section>
+        <img src="images/pattern-ticket.svg" alt="image" id="ticket_image" />
+
+      </div>
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="ticket.js"></script>
+  </body>
+</html>

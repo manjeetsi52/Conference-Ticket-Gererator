@@ -1,0 +1,258 @@
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/Inconsolata-Bold.ttf');
+}
+@font-face {
+    font-family: 'Inconsolata-Medium';
+    src: url('fonts/Inconsolata-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inconsolata-Regular';
+    src: url('fonts/Inconsolata-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+*{
+    margin: 0px;
+}
+:root {
+    --medium-font: 'Inconsolata-Medium';
+    --regular-font: 'Inconsolata-Regular';
+}
+
+body{
+    font-family: 'Inconsolata';
+    height: 100vh;
+}
+.container{
+    height: auto;
+    width: 100%;
+    background-image: url('images/background-desktop.png');
+    box-sizing: border-box;
+    background-size: contain;
+}
+.background-desktop-image{
+    height: 120vh;
+    width: 100%;
+}
+.pattern-circle-image{
+    box-sizing: border-box;
+    position: absolute;
+    /* height: 20%; */
+    margin-top: -100px;
+    padding-left: 94px;
+}
+.pattern-circle-image2{
+    box-sizing: border-box;
+    position: absolute;
+    right: 300px;
+    top: 400px;
+    height: auto;
+    width: auto;
+}
+.pattern-lines-image{
+    background-image: url('images/pattern-lines.svg');
+    position: absolute;
+    height: 125%;
+    width: 100vw;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+.pattern-squiggly-line-top{
+    position: absolute;
+    background-image: url('images/pattern-squiggly-line-top.svg');
+    height: 100%;
+    width: 100%;
+    margin-top: -150px;
+    background-position: right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.pattern-squiggly-line-bottom-desktop{
+    box-sizing: border-box;
+    position: absolute;
+    background-size: contain;
+    bottom: -100px;
+    left: 0px;
+    overflow: hidden;
+    height: 40%;
+    width: 60%;
+}
+.form{
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* border: 2px solid black; */
+    width: 40%;
+    color: white;
+    height: 100%;
+    font-family: var(--regular-font);
+}
+#logo{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+#heading{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#sub-heading{
+    /* font-family: var(--medium-font); */
+    font-family: var(--regular-font);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    opacity: 0.5;
+}
+label{
+    display: block;
+    text-align: left;
+}
+#input-form{
+    box-sizing: border-box;
+    font-style: var(--regular-font);
+    opacity: 0.7;
+    /* border: 2px solid white; */
+    /* width: 50%; */
+    width: 330px;
+}
+#Avatar p{
+    margin-bottom: 10px;
+}
+#dropzone{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border: 2px dashed white ;
+    /* opacity: 0.5; */
+    margin: 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+}
+#dropzone:hover{
+    border: 1px solid white;
+    transition: opacity 0.3s ease;
+}
+#uploadText{
+    cursor: pointer;
+}
+#drag-image p{
+    margin-top: 10px;
+    font-size: 11px;
+}
+#imagePreview {
+    /* border: 1px solid wheat; */
+    background-color: rgba(255,255,255,0.2) ;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+#info-upload{
+    margin-top:8px;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 8px;
+    font-family: var(--regular-font);
+    font-weight: 100;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+
+#info-upload h4{
+    font-size: 10px;
+    font-family: var(--regular-font);
+    font-weight: 100;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+.alert-upload{
+    position: absolute;
+    margin-top:8px;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 8px;
+    font-family: var(--regular-font);
+    font-weight: 100;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+.upload-status{
+    display: none;
+    font-size: 10px;
+    font-family: var(--regular-font);
+    font-weight: 100;
+    opacity: 0.9;
+    box-sizing: border-box;
+    color:  red;
+}
+#alert-img{
+    display: none;
+    /* background-color: rgba(219, 11, 11,1); */
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.2);
+    /* opacity: 0.2; */
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    color: white;
+    padding-left: 10px;
+}
+input::placeholder{
+    color: white;
+    text-align: left;
+    padding: auto;
+    opacity: 0.8;
+    padding-left: 10px;
+    /* font-weight: 800; */
+    font-size: 10px;
+}
+button{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 12px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: black;
+    box-sizing: border-box;
+    font-weight: 600;
+    transition: 0.4s ease;
+    color: white;
+    
+}
+button:active{
+        transform: scale(0.9);
+        transition: 0.2s ease;
+        cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer; 
+}
+ a{
+    color: white;
+    text-decoration: none;
+    /* to remove underline from text */
+}
+

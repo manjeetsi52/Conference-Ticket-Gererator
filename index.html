@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/pattern-circle.svg" alt="image" class="pattern-circle-image">
+        <img class="pattern-lines-image">
+        <img src="images/pattern-circle.svg" alt="image" class="pattern-circle-image2">
+        <img  alt="image" class="pattern-squiggly-line-top">
+        <img class="pattern-squiggly-line-bottom-desktop" src="images/pattern-squiggly-line-bottom-desktop.svg">
+        <img src="images/background-desktop.png" alt="image" class="background-desktop-image">
+    </div>
+    <div class="form">
+        <section id="logo">
+            <img src="images/logo-full.svg" alt="logo">
+        </section>
+        <h1 id="heading">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <h3 id="sub-heading">Secure your spot at next year's biggest coding conference.</h3>
+        
+        <!--  -->
+        <section id="input-form">
+            <section id="Avatar"> <p>Upload Avatar</p>
+                <div id="dropzone">
+                    <input type="file" id="fileInput" accept="image/jpeg, image/png" hidden>
+                    <img src="images/icon-upload.svg" id='imagePreview' alt="">
+                    <p  id="uploadText">Drag and drop or click to upload</p>
+                </div>
+
+                <section id="info-upload"> 
+                    <img src="images/icon-info.svg" alt="info" >
+                    <h4> upload your photo (JPG or PNG , max size: 500kb)</h4>
+                </section>
+
+                <section class="alert-upload">
+                    <img src="images/icon-info.svg" alt="info" id="alert-img" >
+                    <p class="upload-status"> File too large. Please upload a photo under 500KB.</p>
+                </section>
+            </section>
+
+            
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" >
+    
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" ><br/>
+            <section class="alert-upload">
+                <img src="images/icon-info.svg" alt="info" id="alert-img" >
+                <p class="upload-status"> Please enter a valid email address</p>
+            </section>
+            <label for="github-username">GitHub Username</label>
+            <input type="text" name="github-username" id="github-username" placeholder="@yourusername" >
+    
+            <!-- <button id="ticket-button" ><a href="ticket.html" target="_blank">Generate My Ticket</a> </button> -->
+            
+            <a href="ticket.html" target="_blank"><button id="ticket-button" >Generate My Ticket </button></a>
+        </section>
+       
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="ticket.js"></script>
+</body>
+</html>
